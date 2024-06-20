@@ -36,6 +36,7 @@ def create_llm_chain(llm, chat_prompt):
 def load_normal_chain():
     return chatChain()
 
+
 def load_vectordb(embeddings):
     persistent_client = chromadb.PersistentClient(config["chromadb"]["chromadb_path"])
 
